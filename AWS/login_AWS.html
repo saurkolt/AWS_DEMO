@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login AWS</title>
+    <link rel="website icon" type="png" href="/Amazon_icon.png">
+
+    <style>
+        body {
+            background-image: url(/aws\ wal.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            
+        }
+
+        #c1 {
+            margin-left: 90px;
+            margin-top: 350px;
+
+
+        }
+
+        #c2 {
+            margin-left: 90px;
+            margin-top: 20px;
+        }
+
+        #c3 {
+            margin-left: 200px;
+            margin-top: 70px;
+        }
+
+        form {
+            /* background-image: url(/word-image-701.png); */
+            background: transparent;
+            backdrop-filter: blur(3px);
+            height: 200px;
+            width: 1000px;
+            box-shadow: 0.6em 0.6em 0.6em #0000004d;
+
+            width: 500px;
+            margin-left: 800px;
+        }
+
+        p {
+            color: white;
+           
+        }
+        img{
+            height: 100px;
+            width: 100px;
+            margin-left: 1700px;
+        }
+        b{
+            height: 100px;
+            width: 100px;
+            margin-left: 1700px;
+            color: white;
+        }
+       h1{
+        color: white;
+       }
+    </style>
+</head>
+
+<body>
+    <a href="/AWS_Web_site_13_assinment_3.html">
+        <b>HOME</b>
+        <img src="HOME.png" alt="Home">
+    </a>
+    <marquee behavior="" direction="">
+    <h1>AWS Login Page</h1>
+</marquee>  
+    <form name="Login_from" method="post">
+     
+        <p id="c1">User Id : <input type="text" name="userid" id="id1" onfocus="Userid1()"></p>
+        <p id="c2">Password : <input type="password" name="pwd" id="id2" onfocus="pass1()"></p>
+        <input id="c3" type="button" value="Login" onclick="login()">
+        <script>
+            function Userid1() {
+                document.getElementById('id1').placeholder = "Enter User Id";
+            }
+            function pass1() {
+                document.getElementById('id2').placeholder = "Enter Password";
+            }
+            function login() {
+                let user_id = "Saurabh11";
+                let password = "koltepatil@123";
+                let usid = Login_from.userid.value;
+                let pass = Login_from.pwd.value;
+                pass=confirm("Do You Want To Login Page?")
+                if ((user_id == usid) && (password = pass)) {
+                    window.open("AWS_Web_site_13_assinment_3.html");
+                    // alert("Welcome");
+                } else {
+                    alert("Login Fail");
+                }
+            }
+        </script>
+    </form>
+</body>
+
+</html>
